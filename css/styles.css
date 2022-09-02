@@ -9,14 +9,14 @@
 
 :root {
   --main-text-color: #757575;
-  --second-text-color: #212121;;
+  --second-text-color: #212121;
   --hyper-link-color: #2196f3;
+  --accent-focus-color: #2196f3;
   --main-bgc-color: #f5f5f5;
   --second-bgc-color: #f5f4fa;
-  --hero-adn-footer-bgc: #2f303a;
   --white-color: #ffffff;
   --black-color: #000000;
-  --active-focus-color: #2196f3;
+  --hero-adn-footer-bgc: #2f303a;
 }
 
 body {
@@ -33,9 +33,24 @@ body {
 .list {
   list-style: none;
 }
+/* hidden title */
+
+.features .hidden-title,
+.portfolio .hidden-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 /* header */
-.div-header {
+.header-box {
   background-color: var(--white-color);
 }
 
@@ -69,7 +84,7 @@ body {
 
 .header .link:hover,
 .header .link:focus {
-  color: var(--active-focus-color);
+  color: var(--accent-focus-color);
   cursor: pointer;
 }
 
@@ -79,8 +94,8 @@ body {
 
 /* hero */
 
-.div-hero,
-.div-footer {
+.hero-box,
+.footer-box {
   background-color: var(--hero-adn-footer-bgc);
 }
 
@@ -99,13 +114,11 @@ body {
   background-color: var(--hyper-link-color);
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.8;  
+  line-height: 1.8;
+  letter-spacing: 0.06em;
 }
 
 /* features */
-.features .features-title {
-  text-indent: 100%;
-}
 
 .features .list-title {
   color: var(--second-text-color);
@@ -126,7 +139,7 @@ body {
 
 /* our team */
 
-.div-team {
+.team-box {
   background-color: var(--second-bgc-color);
 }
 
@@ -139,7 +152,6 @@ body {
 
 /* footer */
 
-
 .footer .link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
@@ -149,4 +161,49 @@ body {
 
 .footer .address-link {
   color: var(--white-color);
+}
+
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--accent-focus-color);
+}
+
+/* portfolio of the next site */
+
+/* filters */
+.filter .filter-btn {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  cursor: pointer;
+  color: var(--second-text-color);
+  background-color: var(--second-bgc-color);
+}
+.filter .filter-btn:hover,
+.filter .filter-btn:focus {
+  color: var(--white-color);
+  background-color: var(--accent-focus-color);
+}
+
+/* project */
+
+.project-link {
+  text-decoration: none;
+  cursor: default;
+}
+
+.project .project-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--second-text-color);
+}
+
+.project .project-rubric {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--main-text-color);
 }
