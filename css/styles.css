@@ -149,8 +149,8 @@ body {
   color: var(--second-text-color);
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.1;
-  text-align: center;
+  line-height: 1.1; 
+  text-align: center; 
 }
 
 /* our team */
@@ -163,14 +163,12 @@ body {
   color: var(--second-text-color);
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.2;
-  text-align: center;
+  line-height: 1.2;  
 }
 
 .team .item-description {
   font-size: 16px;
-  line-height: 1.2;
-  text-align: center;
+  line-height: 1.2;  
 }
 
 /* footer */
