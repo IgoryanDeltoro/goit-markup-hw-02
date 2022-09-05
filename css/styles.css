@@ -1,17 +1,18 @@
-/* цвет основного текста #212121 */
-/* вторичный цвет текста #757575 */
-/* белый  #FFFFFF */
-/* акцент  и цвет ссылки  #2196F3 */
-/* основной цвет фона #F5F5F5 */
-/* BGC hero and footer #2F303A */
-/* BGC наша команда  #F5F4FA */
-/* цвет логотипа #2196F3 #000000 */
+/* main text color #757575 */
+/* second text color  #212121  */
+/* main BGC color   #F5F5F5 */
+/* BGC hero and footer color #2F303A */
+/* BGC our team   #F5F4FA */
+/* white   #FFFFFF */
+/* accent color   #2196F3 */
+/* logo color  #2196F3 #000000 */
 
 :root {
   --main-text-color: #757575;
   --second-text-color: #212121;
   --hyper-link-color: #2196f3;
   --accent-focus-color: #2196f3;
+  --active-btn: #188ce8;
   --main-bgc-color: #f5f5f5;
   --second-bgc-color: #f5f4fa;
   --white-color: #ffffff;
@@ -25,6 +26,7 @@ body {
   font-weight: 400;
   font-style: normal;
   font-size: 14px;
+  text-transform: none;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
@@ -54,6 +56,8 @@ body {
   background-color: var(--white-color);
 }
 
+/* logo header and footer */
+
 .logo {
   color: var(--second-text-color);
   font-family: 'Raleway', sans-serif;
@@ -63,7 +67,7 @@ body {
   text-decoration: none;
   cursor: default;
 }
-/* logo header and footer */
+
 .logo .one-part,
 .logo .one-part {
   color: var(--hyper-link-color);
@@ -80,6 +84,10 @@ body {
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+
+.nav-list .current {
+  color: var(--accent-focus-color);
 }
 
 .header .link:hover,
@@ -116,6 +124,15 @@ body {
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
+}
+
+.hero .hero-btn:hover,
+.hero .hero-btn:focus {
+  background-color: var(--active-btn);
+}
+
+.hero .hero-btn:active {
+  background-color: var(--active-btn);
 }
 
 /* features */
@@ -168,7 +185,7 @@ body {
   color: var(--accent-focus-color);
 }
 
-/* portfolio of the next site */
+/* PORTFOLIO OF THE NEXT SITE */
 
 /* filters */
 .filter .filter-btn {
@@ -181,9 +198,14 @@ body {
   color: var(--second-text-color);
   background-color: var(--second-bgc-color);
 }
+
 .filter .filter-btn:hover,
 .filter .filter-btn:focus {
   color: var(--white-color);
+  background-color: var(--accent-focus-color);
+}
+
+.filter .filter-btn:active {
   background-color: var(--accent-focus-color);
 }
 
