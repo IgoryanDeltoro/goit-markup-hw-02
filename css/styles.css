@@ -131,10 +131,6 @@ body {
 
 /* features */
 
-.main-bgc {
-  background-color: var(--second-bgc-color);
-}
-
 .features .list-title {
   font-weight: 700;
   font-size: 14px;
